@@ -263,7 +263,7 @@ summary {
 }
 
 :root {
-  --background-color-mail: #e5e5e5;
+  --background-color-main: #e5e5e5;
   --background-color-secondary: #f9f3f5;
   --background-color-skill-first: #fdfdfd;
   --background-color-skill-first: #fce8e6;
@@ -274,7 +274,8 @@ summary {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--background-color-main);
+  color: var(--color-text-main);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -321,6 +322,13 @@ img {
 }
 
 /* Layouts */
+.logo {
+  color: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
 /* UI */
 /* Components */
 .section {
