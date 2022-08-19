@@ -549,4 +549,12 @@ img {
 
 .description {
   color: var(--color-text-secondary);
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 562px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
