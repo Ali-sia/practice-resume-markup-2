@@ -1,0 +1,89 @@
+.hero {
+  // display: flex;
+  // position: relative;
+  max-height: 625px;
+  height: 100%;
+
+  &__container {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+  }
+  &__img-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    max-width: 589px;
+  }
+  &__holder {
+  }
+
+  &__name-holder span {
+    display: inline-block;
+  }
+
+  &__name-holder {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  &__greetings,
+  &__name {
+    font-size: 48px;
+    color: var(--color-text-main);
+  }
+  &__profession {
+    color: var(--color-accent);
+  }
+
+  &__button-holder {
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 14px;
+
+    width: 56px;
+    height: 56px;
+
+    background: var(--background-color-button);
+    border-radius: 100%;
+    border-color: transparent;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  &__elipce {
+    width: 17px;
+    height: 21px;
+
+    border: 1px solid var(--color-text-main);
+    border-radius: 100px;
+  }
+  &__button-description {
+  }
+}
+.resume-holder {
+  position: relative;
+
+  margin-bottom: 68px;
+
+  max-width: 264px;
+}
+
+.resume-line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  display: inline-block;
+  width: 106px;
+
+  border-bottom: 1px solid var(--color-text-main);
+}

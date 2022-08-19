@@ -16,34 +16,35 @@
   </head>
   <body>
     <section class="hero">
-      <div class="container">
-        <header class="header">
-          <!-- 1230px 15px for each side -->
-          <a href="./index.html" class="logo">Benzatine.</a>
-          <nav class="navigation">
-            <ul class="header-links">
-              <li class="header-links__item">
-                <a href="#" class="header-links__link header-links__link--active">
-                  <svg class="header-links__icon" width="14px" height="14px">
-                    <use href="./images/icons/compressed/icons.svg#icon-header1"></use>
-                  </svg>
-                  Dribble
-                </a>
-              </li>
-              <li class="header-links__item">
-                <a href="#" class="header-links__link"
-                  ><svg class="header-links__icon" width="14px" height="14px">
-                    <use href="./images/icons/compressed/icons.svg#icon-header2"></use>
-                  </svg>
-                  Behince</a
-                >
-              </li>
-            </ul>
-            <button class="header__button" type="button">
-              <span class="header__line"></span>
-            </button>
-          </nav>
-        </header>
+      <header class="header container">
+        <!-- <div class="container"> -->
+        <a href="./index.html" class="logo">Benzatine.</a>
+        <nav class="navigation">
+          <ul class="header-links">
+            <li class="header-links__item">
+              <a href="#" class="header-links__link header-links__link--active">
+                <svg class="header-links__icon" width="14px" height="14px">
+                  <use href="./images/icons/compressed/icons.svg#icon-header1"></use>
+                </svg>
+                Dribble
+              </a>
+            </li>
+            <li class="header-links__item">
+              <a href="#" class="header-links__link"
+                ><svg class="header-links__icon" width="14px" height="14px">
+                  <use href="./images/icons/compressed/icons.svg#icon-header2"></use>
+                </svg>
+                Behince</a
+              >
+            </li>
+          </ul>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </nav>
+        <!-- </div> -->
+      </header>
+      <div class="container hero__container">
         <div class="hero__holder">
           <div class="hero__name-holder">
             <span class="hero__greetings"> Hello,I'm </span>
@@ -52,16 +53,25 @@
           </div>
           <div class="resume-holder">
             <span class="resume">Download Resum</span>
-            <span class="resume-line"></span>
+            <div class="resume-line"></div>
           </div>
           <div class="hero__button-holder">
             <button class="hero__button" type="button">
-              <span class="hero__elipce"></span>
+              <div class="hero__elipce"></div>
             </button>
             <span class="hero__button-description">Scrol Down</span>
           </div>
         </div>
-        <picture class="hero__cube-image cube1">
+
+        <div class="hero__img-holder">
+          <img
+            class="hero_image"
+            srcset="./images/img/compressed/hero-person-min.png x1, ./images/img/compressed/hero-person-min@x2.png x2"
+            src="./images/img/compressed/hero-person-min.png"
+            alt="mary gay"
+          />
+        </div>
+        <!-- <picture class="hero__cube-image cube1">
           <source srcset="#" />
           <img src="#" alt="cube smallest" />
         </picture>
@@ -72,11 +82,7 @@
         <picture class="hero__cube-image cube3">
           <source srcset="#" />
           <img src="#" alt="cube big" />
-        </picture>
-        <picture class="hero_image">
-          <source srcset="#" />
-          <img src="#" alt="mary gay" />
-        </picture>
+        </picture> -->
       </div>
     </section>
     <section class="subscribe section">

@@ -7,41 +7,45 @@
 }
 
 .header {
+  // position: absolute;
+  // top: 0;
+  // background-color: transparent;
+
   display: flex;
 
-  &__button {
+  &__burger {
     position: relative;
-
-    margin-top: 24px;
-    margin-bottom: 24px;
-
-    width: 38px;
-    height: 22px;
-
-    background-color: transparent;
-    border: none;
+    width: 30px;
+    height: 20px;
   }
 
-  &__line,
-  &__line::before,
-  &__line::after {
-    position: absolute;
-    right: 0;
-
-    display: block;
-
-    width: 100%;
-    height: 2px;
-
+  &__burger span,
+  &__burger::before,
+  &__burger::after {
     background-color: var(--color-text-main);
-    // transition: opacity 0.3s, transform 0.3s;
-    content: '';
+    position: absolute;
+
+    height: 2px;
+    border-radius: 2px;
   }
 
-  &__line::before {
+  &__burger span {
+    width: 76%;
+    top: 9px;
+    right: 0;
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: '';
+    width: 100%;
+    left: 0;
+  }
+
+  &__burger::before {
     top: 0;
   }
-  &__line::after {
+  &__burger::after {
     bottom: 0;
   }
 }
