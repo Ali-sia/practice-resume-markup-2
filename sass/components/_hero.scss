@@ -75,6 +75,13 @@
   margin-bottom: 68px;
 
   max-width: 264px;
+
+  &--accent {
+    color: var(--color-accent);
+  }
+  &--accent .resume-line {
+    border-color: var(--color-accent);
+  }
 }
 
 .resume-line {
