@@ -401,7 +401,7 @@ img {
 }
 .hero__img-holder {
   position: absolute;
-  top: 0;
+  top: -104px;
   right: 0;
   max-width: 589px;
 }
