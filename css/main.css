@@ -314,6 +314,10 @@ img {
   height: auto;
 }
 
+.mb7 {
+  margin-bottom: 7px;
+}
+
 /* Layouts */
 .container {
   margin-left: auto;
@@ -458,15 +462,91 @@ img {
   border-bottom: 1px solid var(--color-text-main);
 }
 
+.form {
+  position: relative;
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+.form__input {
+  width: 570px;
+  height: 98px;
+  padding: 37px 44px 37px 50px;
+  background: var(--background-color-contact-form);
+  border-color: transparent;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.form__input::-moz-placeholder {
+  color: var(--background-color-secondary);
+}
+.form__input:-ms-input-placeholder {
+  color: var(--background-color-secondary);
+}
+.form__input::placeholder {
+  color: var(--background-color-secondary);
+}
+.icon-form .form__input::-moz-placeholder {
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+}
+.icon-form .form__input:-ms-input-placeholder {
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+}
+.icon-form .form__input::placeholder {
+  background-image: url(/images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100px;
+}
+
 /* UI */
+.form__button {
+  position: absolute;
+  top: 50%;
+  right: 44px;
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  background-color: transparent;
+  color: var(--color-text-main);
+  transform: translateY(-50%);
+}
+.form__icon {
+  fill: currentColor;
+}
+.form__icon:nth-child(1) {
+  margin-left: 7px;
+}
+
 /* Components */
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 132px;
+  padding-bottom: 132px;
 }
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.form-section__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 100px;
+  background-color: var(--background-color-secondary);
+}
+.form-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 291px;
+  width: 100%;
+  text-align: center;
+}
+
+.description {
+  color: var(--color-text-secondary);
 }/*# sourceMappingURL=main.css.map */

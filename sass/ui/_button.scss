@@ -1,0 +1,27 @@
+.form {
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 44px;
+
+    display: flex;
+    align-items: center;
+
+    // max-width: 117px;
+    // max-height: 24px;
+    // width: 100%;
+    // height: 100%;
+
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--color-text-main);
+
+    transform: translateY(-50%);
+  }
+  &__icon {
+    fill: currentColor;
+  }
+  &__icon:nth-child(1) {
+    margin-left: 7px;
+  }
+}

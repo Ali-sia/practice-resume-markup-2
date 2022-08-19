@@ -1,0 +1,25 @@
+.form-section {
+  &__section {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 42px 100px;
+
+    background-color: var(--background-color-secondary);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 291px;
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+.description {
+  color: var(--color-text-secondary);
+}
