@@ -264,7 +264,7 @@ summary {
 
 :root {
   --background-color-main: #fffafa;
-  --background-color-secondary: #e5e5e5;
+  --background-color-secondary: #f9f3f5;
   --background-color-skill-first: #fdfdfd;
   --background-color-skill-second: #fce8e6;
   --background-color-contact-form: #fffafa;
@@ -272,6 +272,7 @@ summary {
   --color-text-main: #282828;
   --color-text-secondary: #c4c4c4;
   --color-accent: #ff4c60;
+  --color-placeholder: #c4c4c4;
 }
 
 body {
@@ -411,13 +412,13 @@ img {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .form__input::-moz-placeholder {
-  color: var(--background-color-secondary);
+  color: var(--color-placeholder);
 }
 .form__input:-ms-input-placeholder {
-  color: var(--background-color-secondary);
+  color: var(--color-placeholder);
 }
 .form__input::placeholder {
-  color: var(--background-color-secondary);
+  color: var(--color-placeholder);
 }
 .icon-form .form__input::-moz-placeholder {
   background-image: url(/images/icons/search.svg);
@@ -624,4 +625,37 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.work__container {
+  display: flex;
+  justify-content: space-between;
+}
+.work__holder {
+  display: flex;
+  max-width: 558px;
+  width: 100%;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.work-list__item {
+  max-width: 150px;
+  max-height: 150px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-button);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.work-list__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

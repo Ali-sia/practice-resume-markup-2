@@ -21,7 +21,7 @@
   }
 
   &__input::placeholder {
-    color: var(--background-color-secondary);
+    color: var(--color-placeholder);
   }
   .icon-form &__input::placeholder {
     background-image: url(/images/icons/search.svg);
