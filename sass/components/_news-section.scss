@@ -1,0 +1,23 @@
+.news {
+  &__container {
+    display: flex;
+  }
+
+  &__img-holder {
+    margin-right: 60px;
+
+    max-width: 340px;
+    width: 100%;
+  }
+
+  &__holder {
+    padding-top: 30px;
+  }
+}
+
+.news .description--accent {
+  font-size: 18px;
+  line-height: 1.44;
+
+  color: var(--color-text-main);
+}
