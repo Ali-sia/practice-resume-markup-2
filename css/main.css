@@ -275,6 +275,10 @@ summary {
   --color-placeholder: #c4c4c4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-top: 19px;
   background-color: var(--background-color-main);
@@ -680,4 +684,52 @@ img {
   font-size: 18px;
   line-height: 1.44;
   color: var(--color-text-main);
+}
+
+.portfolio__button {
+  width: 26px;
+  height: 26px;
+  fill: var(--color-accent);
+}
+.portfolio__theme-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 170px;
+  height: 54px;
+  background-color: var(--background-color-secondary);
+}
+.portfolio__type {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.portfolio__button {
+  margin-right: 125px;
+}
+.portfolio__holder {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: flex;
+  align-items: center;
+}
+.portfolio__container {
+  position: relative;
+}
+.portfolio__image {
+  margin-right: 26px;
+  max-width: 370px;
+  max-height: 452px;
+}
+.portfolio__img-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .image2 {
+  margin-top: 101px;
+}
+.portfolio .image3 {
+  margin-top: 152px;
 }/*# sourceMappingURL=main.css.map */

@@ -57,9 +57,9 @@
             <div class="resume-line"></div>
           </div>
           <div class="hero__button-holder">
-            <button class="hero__button" type="button">
+            <a class="hero__button" href="#contactToMe">
               <div class="hero__elipce"></div>
-            </button>
+            </a>
             <span class="hero__button-description">Scrol Down</span>
           </div>
         </div>
@@ -283,7 +283,7 @@
         </ul>
       </div>
     </section>
-    <!-- undone -->
+    <!-- done -->
     <section class="news section">
       <div class="container news__container">
         <div class="news__img-holder">
@@ -357,31 +357,51 @@
     </section>
     <!-- undone -->
     <section class="portfolio section">
-      <div class="container">
-        <span class="portfolio__type">3D Motion Design</span>
-        <button class="portfolio__button" type="button">
-          <svg class="portfolo__icon">
-            <!-- вставить иконку -->
-            <use></use>
-          </svg>
-        </button>
-        <h2 class="title">Portfolio</h2>
-        <picture class="portfolo__image image1">
-          <source srcset="#" />
-          <img src="#" alt="image1" />
-        </picture>
-        <picture class="portfolo__image image2">
-          <source srcset="#" />
-          <img src="#" alt="image1" />
-        </picture>
-        <picture class="portfolo__image image3">
-          <source srcset="#" />
-          <img src="#" alt="image1" />
-        </picture>
+      <div class="container portfolio__container">
+        <div class="portfolio__holder">
+          <div class="portfolio__theme-holder">
+            <span class="portfolio__type">3D Motion Design</span>
+          </div>
+          <a class="portfolio__button hero__button" href="#">
+            <svg class="portfolo__icon" width="12px" height="8px">
+              <use href="./images/icons/compressed/icons.svg#icon-right-arrow-2"></use>
+            </svg>
+          </a>
+          <h2 class="title">Portfolio</h2>
+        </div>
+        <div class="portfolio__img-holder">
+          <picture class="portfolo__image image1">
+            <source
+              srcset="
+                ./images/img/compressed/portfolio1-min.jpg    1x,
+                ./images/img/compressed/portfolio1@2x-min.jpg 2x
+              "
+            />
+            <img src="./images/img/compressed/portfolio1@-min.jpg" alt="image1" />
+          </picture>
+          <picture class="portfolo__image image2">
+            <source
+              srcset="
+                ./images/img/compressed/portfolio2-min.jpg    1x,
+                ./images/img/compressed/portfolio2@2x-min.jpg 2x
+              "
+            />
+            <img src="./images/img/compressed/portfolio2@-min.jpg" alt="image2" />
+          </picture>
+          <picture class="portfolo__image image3">
+            <source
+              srcset="
+                ./images/img/compressed/portfolio3-min.jpg    1x,
+                ./images/img/compressed/portfolio3@2x-min.jpg 2x
+              "
+            />
+            <img src="./images/img/compressed/portfolio3@-min.jpg" alt="image3" />
+          </picture>
+        </div>
       </div>
     </section>
     <!-- undone -->
-    <section class="contact section">
+    <section class="contact section" id="contactToMe">
       <div class="container">
         <div class="contact__holder">
           <h2 class="title">Get in touch with us!</h2>
