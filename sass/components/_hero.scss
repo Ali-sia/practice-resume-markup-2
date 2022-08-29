@@ -58,6 +58,8 @@
     border-radius: 100%;
     border-color: transparent;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+
+    @include transition-for-2(background-color, border-color);
   }
   &__elipce {
     width: 17px;
@@ -67,6 +69,14 @@
     border-radius: 100px;
   }
   &__button-description {
+  }
+
+  &__button:hover,
+  &__button:focus,
+  &__button:hover &__elipce,
+  &__button:focus &__elipce {
+    background-color: var(--color-accent);
+    border-color: var(--background-color-main);
   }
 }
 .resume-holder {

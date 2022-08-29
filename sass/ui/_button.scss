@@ -17,7 +17,15 @@
     color: var(--color-text-main);
 
     transform: translateY(-50%);
+
+    @include transition-for-1(color);
   }
+
+  &__button:hover,
+  &__button:focus {
+    color: var(--color-accent);
+  }
+
   &__icon {
     fill: currentColor;
   }
