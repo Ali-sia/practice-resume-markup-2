@@ -355,7 +355,7 @@
         </ul>
       </div>
     </section>
-    <!-- undone -->
+    <!-- done -->
     <section class="portfolio section">
       <div class="container portfolio__container">
         <div class="portfolio__holder">
@@ -402,57 +402,68 @@
     </section>
     <!-- undone -->
     <section class="contact section" id="contactToMe">
-      <div class="container">
+      <div class="container contact__container">
         <div class="contact__holder">
-          <h2 class="title">Get in touch with us!</h2>
+          <h2 class="title mb20">Get in touch with us!</h2>
           <p class="contact__text">
             Whether you want to learn about UX or need product design services let us help with your
             challenge.
           </p>
           <ul class="contact-list">
             <li class="contact-list__item">
-              <a href="#" class="coltact-list__link">
-                <svg class="coltact-list__icon">
-                  <!-- вставить иконку -->
-                  <use></use>
+              <a href="#" class="contact-list__link-icon mb20">
+                <svg class="contact-list__icon" width="30px" height="24px">
+                  <use href="./images/icons/compressed/icons.svg#icon-envelop"></use>
                 </svg>
               </a>
-              <a href="mailto:contact@benzatine.com" class="coltact-list__link"
+              <a href="mailto:contact@benzatine.com" class="contact-list__link"
                 >contact@benzatine.com</a
               >
-              <a href="mailto:contact@benzatine.com" class="coltact-list__link"
+              <a href="mailto:contact@benzatine.com" class="contact-list__link"
                 >contact@benzatine.com</a
               >
             </li>
             <li class="contact-list__item">
-              <a href="#" class="coltact-list__link"
-                ><svg class="coltact-list__icon">
-                  <!-- вставить иконку -->
-                  <use></use>
+              <a href="#" class="contact-list__link-icon mb20"
+                ><svg class="contact-list__icon" width="30px" height="30px">
+                  <use href="./images/icons/compressed/icons.svg#icon-phone"></use>
                 </svg>
               </a>
-              <a href="tel:+917567583566" class="coltact-list__link">+91 7567583566</a>
-              <a href="tel:+917567583566" class="coltact-list__link">+91 7567583566</a>
+              <a href="tel:+917567583566" class="contact-list__link">+91 7567583566</a>
+              <a href="tel:+917567583566" class="contact-list__link">+91 7567583566</a>
             </li>
           </ul>
         </div>
         <form class="contact-form">
-          <h2 class="title contact-form__title">Contact-form</h2>
-          <label class="visually-hidden" for="name">Name</label>
-          <input class="contact-form__input" id="name" type="name" placeholder="Name" />
-          <label class="visually-hidden" for="phone">Phone number </label>
-          <input class="contact-form__input" id="phone" type="phone" placeholder="Phone number" />
-          <label class="visually-hidden" for="email">Email address* </label>
-          <input class="contact-form__input" id="email" type="email" placeholder="Email address*" />
-          <label class="visually-hidden" for="subject">Subject</label>
-          <input class="contact-form__input" id="subject" type="text" placeholder="Subject" />
-          <textarea
-            class="contact-form__input contact-form__textarea"
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
-          <button class="contact-form__button" type="submit">Submit</button>
+          <h2 class="title mb20 contact-form__title">Contact-form</h2>
+          <div class="form-field form-field--two-field">
+            <label class="visually-hidden" for="name">Name</label>
+            <input class="contact-form__input mr30" id="name" type="name" placeholder="Name" />
+            <label class="visually-hidden" for="phone">Phone number </label>
+            <input class="contact-form__input" id="phone" type="phone" placeholder="Phone number" />
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="email">Email address* </label>
+            <input
+              class="contact-form__input input-email"
+              id="email"
+              type="email"
+              placeholder="Email address*"
+            />
+          </div>
+          <div class="form-field">
+            <label class="visually-hidden" for="subject">Subject</label>
+            <input class="contact-form__input" id="subject" type="text" placeholder="Subject" />
+          </div>
+          <div class="form-field">
+            <textarea
+              class="contact-form__input contact-form__textarea"
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="contact-form__input contact-form__button" type="submit">Submit</button>
         </form>
       </div>
     </section>

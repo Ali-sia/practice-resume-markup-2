@@ -269,10 +269,12 @@ summary {
   --background-color-skill-second: #fce8e6;
   --background-color-contact-form: #fffafa;
   --background-color-button: #ffffff;
+  --background-color-input: #ffffff;
   --color-text-main: #282828;
   --color-text-secondary: #c4c4c4;
   --color-accent: #ff4c60;
   --color-placeholder: #c4c4c4;
+  --color-fill-contact-icon: #ffffff;
 }
 
 html {
@@ -326,6 +328,10 @@ img {
 
 .mb20 {
   margin-bottom: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
 }
 
 /* Layouts */
@@ -732,4 +738,89 @@ img {
 }
 .portfolio .image3 {
   margin-top: 152px;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+}
+.contact__holder {
+  min-height: 522px;
+  height: 100%;
+  padding: 97px 82px 125px 30px;
+  background-color: var(--background-color-secondary);
+}
+.contact__text {
+  display: inline-block;
+  margin-bottom: 54px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-list__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background-color: var(--color-accent);
+}
+.contact-list__icon {
+  fill: var(--color-fill-contact-icon);
+}
+.contact-list__link {
+  display: inline-block;
+}
+
+.contact-form {
+  padding: 25px 40px;
+  width: 50%;
+  background-color: var(--background-color-contact-form);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.contact-form__title {
+  text-align: center;
+}
+.contact-form .form-field {
+  margin-bottom: 30px;
+}
+.contact-form .form-field--two-field {
+  display: flex;
+}
+.contact-form__input {
+  padding: 19px 16px;
+  background: var(--background-color-input);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-color: transparent;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form__input:hover, .contact-form__input:focus {
+  border-color: var(--color-accent);
+}
+.contact-form .input-email {
+  max-width: 457px;
+  width: 100%;
+}
+.contact-form__textarea {
+  resize: none;
+  width: 488px;
+  height: 167px;
+}
+.contact-form__button {
+  max-width: 227px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
